@@ -1,0 +1,55 @@
+/* pages/login/login.wxss */
+@import"../../style/iconfont.wxss";
+.Container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #44444200;
+  margin-top:70px;
+  width: 330px;
+  margin-left:42px;
+  border-radius: 10px;
+  border:2px solid rgb(240, 201, 94);
+  box-shadow: 0px 0px 10px rgb(240, 201, 94);
+}
+.dir{
+  display: flex;
+  flex-direction: row;
+  float: center;
+  margin:20px
+}
+.input{
+  float: right;
+  margin-top: 5px;
+  margin-right: 40px;
+  border-bottom: 1px solid rgb(240, 201, 94); 
+  color: rgb(240, 240, 240)
+}
+.iconst{
+  margin-bottom: 30px;
+  margin-left: 35px;
+  margin-right: 10px;
+}
+page{
+  background: #777;
+}
+.qita{
+  font-family:"PingFangSC-Thin";
+  font-size:13px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: #F3F3F3
+}
+.iconstt{
+  margin:15px
+}
+button{
+  width: 50%;
+  font-size: 16px;
+  font-family:"PingFangSC";
+  color: rgb(99, 99, 99);
+  background-color: rgb(240, 201, 94);
+  box-shadow: 0px 0px 10px rgb(240, 201, 94);
+}

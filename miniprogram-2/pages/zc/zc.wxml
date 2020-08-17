@@ -1,0 +1,29 @@
+<!--pages/zc/zc.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class="content">
+  <view class='user-input'>
+    <input placeholder='请设置4-20位用户名' placeholder-style='color: #F3F3F3;' class='user' bindinput='userBlur' name="loginName"></input>
+  </view>
+  <view class='user-input'>
+    <input placeholder='请设置6-20位登录密码'placeholder-style='color: #F3F3F3;' password name="password"  class='user'></input>
+  </view>
+  <view class='user-input'>
+    <input placeholder='请填写地址'placeholder-style='color: #F3F3F3;' name="dizhi" class='user' ></input>
+  </view>
+  <view class='user-input'>
+    <input placeholder='联系人姓名'placeholder-style='color: #F3F3F3;' class='user' name="userName" ></input>
+  </view>
+  <view class='phone-test'>
+    <view class='phone-number'>
+      <input placeholder='电话号码'placeholder-style='color: #F3F3F3;' class='user' name="mobile" ></input>
+    </view>
+    <button class='btn2'>发送验证码</button>
+  </view>
+   <view class='user-input'>
+    <input placeholder='短信验证码'placeholder-style='color: #F3F3F3;' name="code" class='user' ></input>
+  </view>
+  </view>
+  <button class="btn" disabled="{{disabled}}" form-type="submit">注册</button>
+
+
+</form>

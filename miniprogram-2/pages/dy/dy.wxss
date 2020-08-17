@@ -1,0 +1,215 @@
+/* pages/dy/dy.wxss */
+.page {  
+  background-color: #777  
+}  
+.swiper-tab {   
+  display: flex;  
+  flex-direction: row;  
+  line-height: 80rpx;  
+  border-bottom: 2rpx solid #777; 
+  justify-content: center; 
+}  
+.tab-item {  
+  width: 33.3%;  
+  text-align: center;  
+  font-size: 15px;  
+  color: rgb(248, 248, 248);  
+}  
+.swiper {  
+  height: 800px;  
+  background-color: #777; 
+  /* background: #5a5a5a;   */
+}  
+.on {  
+  color: rgb(255, 255, 255);  
+  border-bottom: 5rpx solid rgb(243, 217, 68);  
+}  
+.item-content { 
+    display:inline-block;
+    width: 95%;
+    padding: 5px;
+    background: #eeeeee; 
+    margin: 5px ;
+    border-radius: 3px
+}
+
+.out {
+  /* background: rgb(121, 121, 121); */
+  padding: 20px 10px;
+  width: 100%;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+/*设置行内块*/
+
+.out  .item {
+  width: 35%;
+  display:inline-block;
+  margin-right: 10px;
+}
+.zhuboIcon{
+  width:200rpx;
+  border-radius:5px; 
+}
+
+.zhubo-from{
+  color: rgb(214, 214, 214);
+  font-size: 20rpx;
+  margin-top: 1%;
+  word-wrap:break-word;
+  width: 70%
+}
+.zhubo-name{
+  font-size: 26rpx;
+  color: rgb(252, 250, 250); 
+}
+.ban{
+  display: flex;
+  flex-direction: row;
+  margin-top: 2%
+}
+.quanbu{
+  color: rgb(221, 221, 221);
+  font-size: 20rpx;
+  margin-top: 1%;
+  margin-left: 85%
+}
+.biaoti{
+  font-size: 26rpx;
+  color: rgb(247, 247, 247); 
+  margin-left: 3%;
+  position: absolute;
+}
+.buju{
+  display: flex;
+  flex-direction: row;
+  margin-top: 2%;
+  flex-wrap:wrap;
+}
+.item1{
+  margin: 3%
+}
+
+.btn1{
+  width: 200rpx;
+  margin-top: 10%;
+  height: 280rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent; 
+  font-size: 20rpx;
+  margin-left: 8%;
+  border-radius:5px ;
+  border: 2px dashed rgb(230, 230, 230);
+  /* font-family:"PingFangSC"; */
+}
+.btnImg {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.swiperClass {
+  margin: 0;
+  margin-top: 7%;
+  height: 900px
+}
+ 
+.slide-image {
+  width: 85%; 
+  border-radius: 10px;
+  position: relative;
+}
+ 
+image.active {
+  transform: none;
+  transition: all 0.2s ease-in 0s;
+} 
+ 
+image.quiet {
+  transform: scale(0.8333333);
+  transition: all 0.2s ease-in 0s;
+}
+.jrtj{
+  font-size: 26rpx;
+  color: rgb(247, 247, 247); 
+  margin-left: 3%;
+  margin-top: 3%
+}
+.group{
+  display: flex;
+  flex-direction: row;
+}
+.Icon{
+width: 22rpx;
+height: 22rpx;
+padding-top: 5rpx
+}
+.text1{
+  font-size: 23rpx;
+  color: rgb(243, 243, 243);
+  margin-left: 2%; 
+}
+.dyname{
+  font-size: 38rpx;
+  color: rgb(247, 247, 247); 
+}
+.group2{
+  display: flex;
+  flex-direction: row;    
+}
+.dydata{
+  font-size: 38rpx;
+  color: rgb(224, 224, 224); 
+  padding-left: 1%;
+}
+.dyjj{
+  font-size: 30rpx;
+  color: rgb(236, 235, 235);
+  margin-top: 4%
+}
+
+.wenben{
+  width: 100%;
+  border-radius: 5rpx;
+  margin-top: 3%;
+  font-size: 28rpx;
+  color: #eeeeee;
+  font-family:"PingFangSC-Thin";
+}
+.bg{
+  background-color: #777;
+   /* background-color: rgb(177, 177, 177); */
+  border-radius:5px ;
+  width: 86%
+}
+.group3{
+  display: flex;
+  flex-direction: row; 
+  background-color: #f8b932;
+  width: 180rpx;
+  height: 60rpx;
+ margin-top: 5%;
+ align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.play{
+  font-size: 30rpx;
+}
+.playicon{
+  width: 30rpx;
+height: 30rpx;
+padding-right: 2px;
+}
+.wz scroll-view{
+    height: 105px;
+    margin-top: 1%
+}
+.item3{
+  font-size: 28rpx;
+  color: #eeeeee;
+  font-family:"PingFangSC-Thin";
+}

@@ -1,0 +1,72 @@
+{
+  "pages": [
+   "pages/xingqiu/xingqiu",
+     "pages/music_Share/music_Share",
+    "pages/index/index",
+    "pages/system/sysinfo", 
+    "pages/register/register",
+   "pages/ZL_list/ZL_list",
+    
+    "pages/hdlist/hdlist",
+    "pages/story/story",
+    "pages/plaza/plaza",
+    "pages/aim/aim",
+    "pages/story_txt/story_txt",
+    "pages/aim_add/aim_add",
+    "pages/issue/issue",
+    "pages/story_comment/story_comment",
+    "pages/plaza_txt/plaza_txt",
+    "pages/miusicc/miusicc",
+    "pages/Gps1/Gps",
+    "pages/map1/map",
+    "pages/dy/dy",
+    "pages/gyzn/gyzn",
+   "pages/map/map",
+    
+   "pages/login/login",
+    "pages/music/music",
+    "pages/zc/zc",
+    "pages/SP_info/SP_info",
+    "pages/gps/gps",
+    
+    "pages/sp/sp",
+    "pages/SP_list/SP_list",
+    "pages/test/test",
+    "pages/logs/logs",
+    
+    "pages/hdlist1/hdlist1",
+    "pages/hdlist2/hdlist2"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#777",
+    "navigationBarTitleText": "一刻",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#777",
+    "backgroundColor": "#F3F3F3",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/xingqiu/xingqiu",
+        "text": "首页",
+        "iconPath": "image/bar/首页.png",
+        "selectedIconPath": "image/bar/首页.png"
+      },
+      {
+        "pagePath": "pages/aim/aim",
+        "text": "打卡",
+        "iconPath": "image/bar/选择.png",
+        "selectedIconPath": "image/bar/选择.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "image/bar/我的.png",
+        "selectedIconPath": "image/bar/我的.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,42 @@
+<!--index.wxml--> 
+<view class="Container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <view class='top_nav'>
+  <view class="nav-name {{item.typeId == currentId ? 'nav-hover':''}}" wx:for="{{section}}" wx:key="id" id='{{item.typeId}}' catchtap='handleTap'>
+    {{item.name}}
+  </view>
+</view>
+
+<!-- fb -->
+<view hidden='{{currentId!=1}}'> 
+<view class="bg">  
+      <view class="buju">
+      <view class='item1' wx:for="{{list}}" wx:for-item="item">
+    <image class='zhuboIcon' src='{{item.img}}' ></image>
+    </view>
+    </view>
+     </view>
+</view>
+<!-- sc -->
+<view class="bg" hidden='{{currentId!=2}}'>
+<view class="container">
+ <image class='icon' src='/image/bar/空1.png '></image>
+ <text>这里啥也没有～</text>
+ </view>
+</view>
+<!-- dk -->
+<view class="bg" hidden='{{currentId!=3}}'>
+ <view class="container">
+ <image class='icon' src='/image/bar/空.png '></image>
+ <text>今天已完成全部打卡～</text>
+ </view>
+</view>
+  </view>
+</view>

@@ -1,0 +1,2 @@
+<!--pages/test/test.wxml-->
+<button data-image='/image/bar/1206803589.jpg' bindtap="save" >保存图片</button>

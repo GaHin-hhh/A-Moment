@@ -1,0 +1,107 @@
+/* pages/story/story.wxss */
+page{
+   background-color:rgb(243, 243, 243);
+}
+.container{
+  height: 100vh;
+}
+.line{
+height: 5px;
+background: #cccccc;
+margin-top: 10px;
+}
+.top_data{
+  height: 70px;
+  display: flex;
+  padding: 5px;
+}
+.top_icon_l{
+width: 10px;
+height: 10px;
+margin-top: 25px;
+}
+.top_icon_r{
+width: 15px;
+height: 15px;
+margin-top: 35px;
+padding: 10px;
+
+}
+.data_day{
+  font-size: 24px;
+  padding: 10px;
+  font: bold;
+}
+.more{
+  font-size: 12px;
+  font: bold;
+  margin-top:45px;
+}
+.data_year
+{
+  font-size: 12px;
+  font: bold;
+  padding: 10px;
+  padding-left: 0;
+  margin-top: 10px;
+}
+.story_view{
+  padding: 10px;
+}
+.story_view .name{
+  font: bold;
+  font-size: 20px;
+}
+.story_view .author{
+  font-size: 13px;
+  margin-top: 2px;
+  color: #666666;
+}
+.story_view .story_type
+{
+  font-size: 12px;
+  text-align: center;
+  color: #666666;
+  padding-bottom: 20px;
+
+}
+
+.story_view .img{
+  width: 100%;
+  border-radius: 5px;
+  background: rgb(243, 243, 243);
+  height: 200px;
+ margin-top: 5px;
+}
+.story_view .txt{
+  font-size: 14px;
+  color: #666666;
+  padding-top: 10px; 
+  padding-bottom: 20px; 
+  line-height: 25px;
+  /* overflow:hidden;
+  display:-webkit-box;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-box-orient: vertical; */
+}
+.story_view .bottom{
+display: flex;
+}
+.story_view .bottom .day{
+font-size: 10px;
+margin-top: 5px;
+color: #7e7e7e;
+font: bold;
+}
+.right_part{
+margin-left: auto;
+display: flex;
+margin-right: 5px;
+}
+.story_view .bottom .right_part .icon{
+width: 15px;
+height: 15px;
+margin-left: 15px;
+}

@@ -1,0 +1,140 @@
+<!--pages/xingqiu/xingqiu.wxml-->
+<view class="search">
+  <view class="dir">
+    <icon class="iconfont icon-huaban iconst ic1"></icon>
+    <input class="text1" placeholder="请输入关键词"></input>
+    <button class="button1">取消</button>
+  </view>
+</view>
+<view>
+<view class="main-menu-group">
+<view class="main-menu">
+<navigator url='/pages/dy/dy'>
+  <view class='btn1'>
+    <image class='btnImg' src='/image/bar/视频电影-01.png '></image>
+    <view>影视</view>
+ </view> 
+ </navigator>
+ <navigator url='/pages/miusicc/miusicc'>
+  <view class='btn1'>
+    <image class='btnImg' src='/image/bar/音乐.png'></image>
+    <view>音乐</view>
+ </view>
+ </navigator>
+ <navigator url='/pages/plaza/plaza'>
+ <view class='btn1'>
+    <image class='btnImg' src='/image/bar/图片.png '></image>
+    <view>图文</view>
+ </view>
+ </navigator>
+ <navigator url='/pages/ZL_list/ZL_list'>
+ <view class='btn1'>
+    <image class='btnImg' src='/image/bar/星标.png'></image>
+    <view>活动</view>
+ </view>
+ </navigator>
+ <navigator url='/pages/story/story'>
+ <view class='btn1'>
+    <image class='btnImg' src='/image/bar/资料.png '></image>
+    <view>连载</view>
+ </view>
+ </navigator>
+</view>
+</view>
+
+<view class="hualun">
+<text>故事精选</text>
+<swiper
+  indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}"
+  interval="{{interval}}"
+  duration="{{duration}}"
+  previous-margin="{{previousMargin}}" 
+  next-margin="{{nextMargin}}"
+  circular="{{circular}}"
+  bindchange="swiperBindchange"
+>
+  <block wx:for="{{imgUrls}}" wx:key='{{index}}'>
+    <swiper-item>
+    <navigator url='{{item.link}}'>
+      <image src="{{item.url}}" class="slide-image {{currentSwiperIndex == index ? 'zoom-in' : 'zoom-out'}}"/>
+    </navigator>
+    </swiper-item>
+  </block>
+</swiper>
+</view>
+
+<view class="huodong">
+<view class="dir2">
+<text>近期活动</text>
+<view class="weizhi2">
+<navigator url='/pages/ZL_list/ZL_list'>
+<button class="button2">更多+</button>
+</navigator>
+</view>
+</view>
+    <scroll-view scroll-x="true">
+    <view class="weizhi" >
+        <view class="item-content" wx:for="{{list}}" wx:for-item="item">
+        <navigator url='/pages/hdlist/hdlist?goodsId={{index}}'>
+            <image class="img" mode="widthFix" src="{{item.img}}" data-src="{{item.img}}"></image>
+            <view class="title">{{item.title}}</view>
+            <view class="content">{{item.content}}</view>
+            </navigator>
+        </view>
+        
+        </view>
+
+      <view class="weizhi" >
+        <view class="item-content" wx:for="{{list2}}" wx:for-item="item">
+        <navigator url='/pages/hdlist1/hdlist1?goodsId={{index}}'>
+         <image class="img" mode="widthFix" src="{{item.img}}" data-src="{{item.img}}"></image>
+            <view class="title">{{item.title}}</view>
+            <view class="content">{{item.content}}</view>
+             </navigator>
+        </view>
+         </view>
+      <view class="weizhi" >
+        <view class="item-content" wx:for="{{list3}}" wx:for-item="item">
+        <navigator url='/pages/hdlist2/hdlist2?goodsId={{index}}'>
+         <image class="img" mode="widthFix" src="{{item.img}}" data-src="{{item.img}}"></image>
+            <view class="title">{{item.title}}</view>
+            <view class="content">{{item.content}}</view>
+             </navigator>
+        </view>
+      </view>  
+    </scroll-view>
+</view>
+
+
+<view class="dir3">
+    <image mode="widthFix" class="ic2" src="/image/bar/星球.png "></image>
+    <view class="xiaojibiaoti">小城记事</view>
+</view>
+
+<view class="xiaoji" wx:for="{{list4}}" wx:for-item="item">
+<view class='zhubo'>
+      <view class='zhuboLeft'>
+        <view class='zhubo-avater'>
+          <image class='zhuboIcon' src="{{item.img}}"></image>
+        </view>
+        <view class='zhuboDes'>
+          <view class='zhubo-name'>{{item.title}}</view>
+          <view class='zhubo-from'>{{item.content}}</view>
+        </view>
+      </view>
+</view>
+     <view>
+          <image class="tupian" mode="widthFix" src="{{item.img2}}"></image>
+    </view>
+    <view class="wenan">{{item.wenan}}</view> 
+    <view class="bg">
+    <view class="dir2">
+    <image class="dianji" src="{{isFavorite=='false'?'/image/bar/md-heart.png':'/image/bar/md-heart1.png'}}" bindtap='collect'></image> 
+    <image class="dianji" src="{{isFavorite1=='false'?'/image/bar/ios-star.png  ':'/image/bar/ios-star1.png '}}" bindtap='collect1'></image>
+    <image class="dianji3" src="/image/bar/fx.png " ></image> 
+    </view>
+    </view>
+</view>
+
+</view>

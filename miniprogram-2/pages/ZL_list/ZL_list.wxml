@@ -1,0 +1,67 @@
+<!--pages/ZL_list/ZL_list.wxml-->
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image"/>
+      </swiper-item>
+    </block>
+</swiper> 
+<view class="page">  
+  <!--顶部导航栏-->  
+  <view class="swiper-tab">  
+    <view class="tab-item {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">展览</view>  
+    <view class="tab-item {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">聚会</view>  
+    <view class="tab-item {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">讲座</view>  
+  </view>  
+  <!--内容主体-->  
+  <swiper class="swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange">  
+    <swiper-item>  
+    
+      <view class="weizhi"> 
+      <block wx:for='{{list}}'>
+      <view class="item-content" wx:for-item="item"  wx:key='{{index}}'>
+      <navigator url='/pages/hdlist/hdlist?goodsId={{index}}'>
+            <image class="img" mode="widthFix" src="{{item.img}}" data-src="{{item.img}}"></image>
+            <view class="title">{{item.title}}</view>
+            <view class="place">{{item.place}}</view>
+            <view class="content">{{item.content}}</view> 
+            </navigator>
+        </view>
+       </block>
+        <text>查看往期</text>
+      </view>  
+    </swiper-item>   
+    <swiper-item>  
+      <view class="weizhi">
+      <block wx:for='{{list1}}'>
+      <view class="item-content" wx:for-item="item" wx:key='{{index}}'>
+      <navigator url='/pages/hdlist1/hdlist1?goodsId={{index}}'>
+            <image class="img" mode="widthFix" src="{{item.img}}" data-src="{{item.img}}"></image>
+            <view class="title">{{item.title}}</view>
+            <view class="place">{{item.place}}</view>
+            <view class="content">{{item.content}}</view>
+             </navigator>
+        </view>
+        </block>
+        <text>查看往期</text>
+        
+      </view>  
+    </swiper-item>  
+    <swiper-item>  
+      <view class="weizhi">
+      <block wx:for='{{list2}}'>
+      <view class="item-content" wx:for-item="item" wx:key='{{index}}'>
+       <navigator url='/pages/hdlist2/hdlist2?goodsId={{index}}'>
+            <image class="img" mode="widthFix" src="{{item.img}}" data-src="{{item.img}}"></image>
+            <view class="title">{{item.title}}</view>
+            <view class="place">{{item.place}}</view>
+            <view class="content">{{item.content}}</view>
+             </navigator>
+        </view>
+         </block>
+        <text>查看往期</text>
+      </view>  
+    </swiper-item>  
+  </swiper>  
+</view>  

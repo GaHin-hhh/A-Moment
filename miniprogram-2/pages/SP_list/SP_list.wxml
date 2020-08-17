@@ -1,0 +1,13 @@
+<!--pages/SP_list/SP_list.wxml-->
+<text>pages/SP_list/SP_list.wxml</text>
+<view class='list-head'>列表测试</view>
+<view class='list-box'>
+    <view class='list-li mflex' wx:for='{{gird}}' wx:key=''>
+    <navigator url='/pages/sp/sp'>
+      <view class='list-img'><image src='http://172.31.141.128:8080/Tajax/pic/{{item.SPPIC}}'></image></view>
+      </navigator>
+      <view class='list-tit'><text>{{item.id}}、{{item.SPMC}}</text></view>
+      <view class='list-con'><text>单价{{item.SPJG}}元/m</text></view>
+    </view>
+
+</view>

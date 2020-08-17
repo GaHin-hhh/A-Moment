@@ -1,0 +1,20 @@
+<!--pages/plaza/plaza.wxml-->
+<view class="container">
+  <view class="view" wx:for="{{datas}}" wx:key="" >
+    <navigator url="/pages/plaza_txt/plaza_txt?id={{item.ID}}">
+      <image class="plaza_img" src="{{item.IMG}}" ></image>
+      <view class="plaza_info">
+        <view class="plaza_title">
+          <text >{{item.TXT}}</text>
+        </view>
+        <view class="plaza_author">{{item.AUTHOR}}</view>
+          <view class="plaza_time">{{item.DAY}}</view> 
+      </view>
+    </navigator>
+  </view>
+  
+  <navigator url="/pages/issue/issue" class="bottom">
+    <image class="bottom_btn" src="../../image/plaza/btn.png"></image>
+  </navigator>
+
+  </view>

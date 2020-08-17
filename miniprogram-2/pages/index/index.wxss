@@ -1,0 +1,88 @@
+/**index.wxss**/
+page{
+  /* background-color:#3F3F3F; */
+  /* background-color:#777; */
+   background-color:#F3F3F3;
+}
+.Container{
+  margin-top: 30px; 
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 10rpx;
+  border-radius: 50%;
+  border: 2px solid  rgb(240, 201, 94);
+  box-shadow: 0px 0px 10px  rgb(240, 201, 94);
+}
+
+.userinfo-nickname {
+  color: rgb(88, 88, 88);
+  /* color: #5c5c5c */
+}
+
+.usermotto {
+  margin-top: 20px;
+}
+.top_nav{
+  /* border-bottom: 2px solid #eed890;*/
+  /* border-top: 1px solid  #3F3F3F;  */
+  background-color: #777;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+.nav-name{  
+  display: inline-block;
+  color: #F3F3F3;
+  padding: 18rpx 85rpx 18rpx 85rpx;
+  font-size: 30rpx;
+}
+.nav-hover{
+  color:  rgb(240, 201, 94);
+  /* border-bottom: 3px solid #eed890; */
+}
+.buju{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  background-color: #777;
+}
+.item1{
+  margin-left: 2px;
+  
+}
+.zhuboIcon{
+  width: 135px;
+  height: 135px;
+}
+.icon{
+   width: 70px;
+  height: 70px;
+}
+text{
+   color: #c2c2c2;
+   padding-top: 20rpx;
+   font-size: 28rpx
+}
+.container {
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+  background-color: #777;
+} 
+.bg{
+   background-color: #777;
+   height: 420px;
+}

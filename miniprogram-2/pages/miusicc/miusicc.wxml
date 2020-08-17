@@ -1,0 +1,191 @@
+<!--pages/miusicc/miusicc.wxml-->
+<!-- <audio src="{{audioSrc}}" poster="{{audioPoster}}" name="{{audioName}}" author="{{audioAuthor}}" controls></audio> -->
+<view class="fabu">
+<navigator url='/pages/music_Share/music_Share'>
+<image mode="widthFix" class="ic2" src="/image/bar/ios-add-circle.png  "></image>
+</navigator>
+</view>
+<view class="weizhi"><text>分享我的音乐</text>
+</view>
+<view class="divLine"></view>
+<view class="main" >
+<block wx:for="{{audioArr}}" wx:key="content" wx:for-item="v" wx:for-index="key">
+<view class='zhubo'>
+      <view class='zhuboLeft'> 
+        <view class='zhubo-avater'>
+          <image class='zhuboIcon' src="/image/bar/1206803589.jpg"></image>
+        </view>
+        <view>
+          <view class='zhubo-name'>梦呓</view>
+          <view class='zhubo-from'>2019/09/09</view>
+        </view>
+      </view>
+  </view>
+<!-- <block wx:for="{{audioArr}}" wx:key="content" wx:for-item="v" wx:for-index="key"> -->
+  <view class='output-audio'>  
+    <!-- 默认状态 未播放 -->
+    <view class='audio' wx:if="{{!v.bl}}" bindtap='audioPlay' data-key="{{key}}" data-id="{{v.id}}" data-bl="{{v.bl}}">
+      <image class='ico' src='/image/bar/yuyin-ico.png ' />
+      <label class='time'>{{v.time}}</label>
+    </view>
+    <!-- 当前正在播放状态 -->
+    <view class='audio' wx:if="{{v.bl}}" bindtap='audioStop' data-key="{{key}}"  data-id="{{v.id}}" data-bl="{{v.bl}}">
+      <image class='ico' src='/image/bar//yuyin-gif.gif' />
+      <label class='time'>{{v.time}}</label>
+    </view>
+  </view>
+  <view class="bg">
+    <view class="dir2">
+    <image class="dianji" src="/image/bar/like.png"></image> 
+    <text class="xiaozi">喜欢</text> 
+    <image class="dianji2" src="/image/bar/mark.png"></image>
+    <text class="xiaozi">评论</text> 
+    <image class="dianji3" src="/image/bar/md-more.png  "></image> 
+    </view>
+    </view>
+   <view class="divLine1"></view>
+   <view class='zhubo'>
+      <view class='zhuboLeft'>
+        <view class='zhubo-avater'>
+          <image class='zhuboIcon' src="/image/bar/1206803589.jpg"></image>
+        </view>
+        <view>
+          <view class='zhubo-name'>梦呓</view>
+          <view class='zhubo-from'>2019/09/09</view>
+        </view>
+      </view>
+  </view>
+<view class='zhubo1'> 
+      <view class='zhuboLeft1'>
+        <view class='zhubo-avater1'>
+          <image class='zhuboIcon1' src="/image/bar/1206803589.jpg"></image>
+        </view>
+        <view>
+          <view class='zhubo-name1'>喜剧收场</view>
+          <view class='zhubo-from1'>杨丞琳</view>         
+        </view>
+        <image class="ic3" src='/image/bar/ios-play.png'/>
+      </view>
+  </view>
+
+  <view class="bg">
+    <view class="dir2">
+    <image class="dianji" src="/image/bar/like.png"></image>
+    <text class="xiaozi">喜欢</text> 
+    <image class="dianji2" src="/image/bar/mark.png"></image>
+    <text class="xiaozi">评论</text> 
+    <image class="dianji3" src="/image/bar/md-more.png  "></image> 
+    </view>
+    </view>
+   <view class="divLine"></view>
+</block>
+
+<block wx:for="{{audioArr2}}" wx:key="content" wx:for-item="v" wx:for-index="key">
+<view class='zhubo'>
+      <view class='zhuboLeft'>
+        <view class='zhubo-avater'>
+          <image class='zhuboIcon' src="/image/bar/1206803589.jpg"></image>
+        </view>
+        <view>
+          <view class='zhubo-name'>梦呓</view>
+          <view class='zhubo-from'>2019/09/09</view>
+        </view>
+      </view>
+  </view>
+<!-- <block wx:for="{{audioArr}}" wx:key="content" wx:for-item="v" wx:for-index="key"> -->
+  <view class='output-audio'>  
+    <!-- 默认状态 未播放 -->
+    <view class='audio' wx:if="{{!v.bl}}" bindtap='audioPlay' data-key="{{key}}" data-id="{{v.id}}" data-bl="{{v.bl}}">
+      <image class='ico' src='/image/bar/yuyin-ico.png ' />
+      <label class='time'>{{v.time}}</label>
+    </view>
+    <!-- 当前正在播放状态 -->
+    <view class='audio' wx:if="{{v.bl}}" bindtap='audioStop' data-key="{{key}}"  data-id="{{v.id}}" data-bl="{{v.bl}}">
+      <image class='ico' src='/image/bar//yuyin-gif.gif' />
+      <label class='time'>{{v.time}}</label>
+    </view>
+  </view>
+  <view class="bg">
+    <view class="dir2">
+    <image class="dianji" src="/image/bar/like.png"></image> 
+    <text class="xiaozi">喜欢</text> 
+    <image class="dianji2" src="/image/bar/mark.png"></image>
+    <text class="xiaozi">评论</text> 
+    <image class="dianji3" src="/image/bar/md-more.png  "></image> 
+    </view>
+    </view>
+   <view class="divLine"></view>
+   <view class='zhubo'>
+      <view class='zhuboLeft'>
+        <view class='zhubo-avater'>
+          <image class='zhuboIcon' src="/image/bar/1206803589.jpg"></image>
+        </view>
+        <view>
+          <view class='zhubo-name'>梦呓</view>
+          <view class='zhubo-from'>2019/09/09</view>
+        </view>
+      </view>
+  </view>
+<view class='zhubo1'> 
+      <view class='zhuboLeft1'>
+        <view class='zhubo-avater1'>
+          <image class='zhuboIcon1' src="/image/bar/1206803589.jpg"></image>
+        </view>
+        <view>
+          <view class='zhubo-name1'>喜剧收场</view>
+          <view class='zhubo-from1'>杨丞琳</view>         
+        </view>
+        <image class="ic3" src='/image/bar/ios-play.png'/>
+      </view>
+  </view>
+
+  <view class="bg">
+    <view class="dir2">
+    <image class="dianji" src="/image/bar/like.png"></image>
+    <text class="xiaozi">喜欢</text> 
+    <image class="dianji2" src="/image/bar/mark.png"></image>
+    <text class="xiaozi">评论</text> 
+    <image class="dianji3" src="/image/bar/md-more.png  "></image> 
+    </view>
+    </view>
+   <view class="divLine"></view>
+</block>
+
+
+<view class='zhubo'>
+      <view class='zhuboLeft'>
+        <view class='zhubo-avater'>
+          <image class='zhuboIcon' src="/image/bar/1206803589.jpg"></image>
+        </view>
+        <view>
+          <view class='zhubo-name'>梦呓</view>
+          <view class='zhubo-from'>2019/09/09</view>
+        </view>
+      </view>
+  </view>
+<view class='zhubo1'>
+      <view class='zhuboLeft1'>
+        <view class='zhubo-avater1'>
+          <image class='zhuboIcon1' src="/image/bar/1206803589.jpg"></image>
+        </view>
+        <view>
+          <view class='zhubo-name1'>喜剧收场</view>
+          <view class='zhubo-from1'>杨丞琳</view>         
+        </view>
+        <image class="ic3" src='/image/bar/ios-play.png'/>
+      </view>
+  </view>
+
+
+  <view class="bg">
+    <view class="dir2">
+    <image class="dianji" src="/image/bar/like.png"></image> 
+    <text class="xiaozi">喜欢</text> 
+    <image class="dianji2" src="/image/bar/mark.png"></image>
+    <text class="xiaozi">评论</text> 
+    <image class="dianji3" src="/image/bar/md-more.png  "></image> 
+    </view>
+    </view>
+   <view class="divLine"></view>
+
+</view>

@@ -1,0 +1,10 @@
+<view class="container">
+
+  <image class="img"  src="{{datas.IMG}}"></image>
+  <view class="txt_view">
+    <view class="date">{{datas.DAY}}</view>
+    <view class="txt"><text>{{datas.TXT}}</text></view>
+    <view class="author">—— {{datas.AUTHOR}} ——</view>
+ 
+  </view>
+</view>

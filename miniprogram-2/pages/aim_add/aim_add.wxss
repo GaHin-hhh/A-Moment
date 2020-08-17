@@ -1,0 +1,183 @@
+page{ 
+ height: 100%; 
+ font-size: 14px;
+ background-color: #F3F3F3;
+} 
+.container { 
+  width: 95%;
+    padding: 10px;
+ margin: auto;
+
+
+} 
+.view{
+  
+  display: flex;
+  width: 100%;
+  line-height: 30px;
+  padding: 10px;
+}
+.view-row{
+  display: flex;
+  width: 100%;
+  line-height: 30px;
+  padding: 10px;
+}
+view-col
+{
+  display: flex;
+  flex-direction: column;
+}
+/* 标题 */
+.topic{
+padding-left: 10px;
+padding-bottom: 10px;
+margin-top: 15px;
+display: flex;
+}
+.topic-icon{
+width: 27px;
+height: 27px;
+}
+.img{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background:rgb(209, 209, 209);
+  border-radius:5px;
+  padding: 5px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+.img_add{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background:rgb(209, 209, 209);
+  border-radius:5px;
+  padding: 5px;
+}
+.addTime_img{
+  width: 25px;
+  height: 25px;
+  margin: auto;
+}
+/* 打卡目标 */
+
+.name-key{
+  font-weight: bold;
+  padding-left: 5px;
+  margin-top: 4px
+}
+.name-input{
+  background:rgb(209, 209, 209);
+  border-radius: 5px;
+  flex: 1;  
+  padding-left: 15px;
+  height: 30px;
+  line-height: 30px;
+  margin-left: 10px;
+  margin-right: 20px;
+  color: black!important;
+
+}
+/* 打卡时间 */
+.begin-time-view{
+padding: 10px;
+width:40%;
+display: flex;
+flex-direction: column;
+background: rgb(209, 209, 209);
+border-radius: 5px;
+
+}
+.end-time-view{
+padding: 10px;
+width:40%;
+display: flex;
+flex-direction: column;
+background: rgb(209, 209, 209);
+margin-left: auto;
+margin-right: 20px;
+border-radius: 5px;
+
+}
+
+.begin-time-key,.end-time-key,.name-input{
+font-size: 12px;
+color: rgb(61, 61, 61);
+}
+
+.begin-time-value,.end-time-value{
+font-size: 16px;
+color: rgb(62, 156, 194);
+}
+
+/*swtich整体大小*/
+.wx-switch-input{
+width:102rpx !important;
+height:60rpx !important;
+background: rgb(240, 201, 94)!important;
+border: none!important;
+}
+/*白色样式（false的样式）*/
+.wx-switch-input::before{
+width:200rpx !important;
+height: 60rpx !important;
+
+}
+/*绿色样式（true的样式）*/
+.wx-switch-input::after{
+width: 65rpx !important;
+height: 55rpx !important;
+}
+.topic-switch{
+margin-left: auto;
+margin-right: 20px;
+}
+/*添加提醒时间*/
+.add_time_img{
+width: 25px;
+height: 25px;
+margin: auto;
+
+}
+.add_time_value{
+  font-size: 12px;
+  margin-top: 5px;
+  margin: auto;
+}
+/*重复时间选择器*/
+
+.repeat_value,.bell_value{
+margin-left: auto;
+margin-right: 15px;
+display: flex;
+font:bold!important;
+}
+/*picker下拉图标*/
+
+.picker-icon{
+  width: 10px;
+  height: 20px;
+  padding-left: 5px;
+
+}
+.textarea_value{
+  margin: auto;
+  height: 100px;
+}
+.bottom-btn{
+ width: 30%;
+  height: auto;
+  border-radius: 5px;
+  background: rgb(240, 201, 94);
+  font-size: 14px;
+  color: white;
+  margin-bottom: 20px;
+}
+

@@ -1,0 +1,22 @@
+/* pages/test/test.wxss */
+scroll-view {
+    width: 80%;
+    white-space: nowrap;
+}
+ 
+.item-content { 
+    display:inline-block;
+    width: 90%;
+    text-align: center;
+}
+
+.scroll-major-img-wrap {
+ height: 280rpx;
+}
+.scroll-major-title {
+ margin: 16rpx ;
+}
+.weizhi{
+   width: 80%;
+   text-align: center;
+}

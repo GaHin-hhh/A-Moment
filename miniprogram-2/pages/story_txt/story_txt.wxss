@@ -1,0 +1,71 @@
+/* pages/story_txt/story_txt.wxss */
+page{
+height: 100%;
+}
+.container { 
+ height: 100%;
+ width: 100%;
+ display: flex; 
+ flex-direction: column;
+/* background: #eee; */
+}
+scroll_view
+{
+  background:black;
+  padding: 10px;
+}
+.title{
+font-size: 26px;
+padding: 20px;
+color: rgb(59, 59, 59)
+}
+.author{
+  font-size: 12px;
+  padding-left:20px;
+  color: rgb(107, 107, 107)
+}
+.txt{
+font-size: 16px;
+height: auto;
+margin-top: 10px;
+padding: 20px;
+
+}
+.txt_text{
+  font-size: 16px;
+  line-height: 25px;
+  color: rgb(90, 90, 90)
+  /* font-family:"PingFangSC-Thin" */
+}
+.bottom_nav{
+  border-top:#999 1px solid; 
+  height: 100px;
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  }
+.bottom_nav .bottom_input{
+  border: 1px solid #999;
+  border-radius: 5px;
+  padding-left: 5px;
+  font-size: 12px;
+  margin-left: 10px;
+}
+.bottom_nav .right_part{
+margin-left: auto;
+display: flex;
+margin-right: 5px;
+}
+.bottom_nav .right_part .icon{
+width: 15px;
+height: 15px;
+margin-left: 40px;
+
+}
+.bottom_nav .right_part .icon_num{
+position: absolute;
+font-size: 10px;
+bottom: 20px;
+padding: 5px;
+
+}

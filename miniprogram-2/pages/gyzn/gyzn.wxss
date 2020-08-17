@@ -1,0 +1,142 @@
+/* pages/g y z n/g y z n.wxss */
+page{
+  background-color: #777;
+}
+.zhubo{
+  margin: 0 25rpx 0;
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  padding-bottom: 25rpx;
+  border-bottom:1px solid #7e7b7b 
+}
+.zhuboIcon{
+  width:200rpx;
+  border-radius:5px; 
+  margin-top: 30rpx 
+}
+.zhuboLeft{
+  display: flex;
+  flex-direction: row;
+}
+.zhubo-avater{
+  padding-right: 20rpx;
+  display: flex;
+  align-items: center;
+}
+.zhubo-name{
+  font-size: 30rpx;
+  color: rgb(247, 247, 247); 
+}
+.zhubo-from{
+  color: rgb(209, 209, 209);
+  font-size: 20rpx;
+  margin-top: 1%;
+  word-wrap:break-word;
+  width: 105%
+}
+.conts {
+  font-size: 25rpx;
+  margin-left: 2%;
+  margin-top: 2%;
+  /*关键属性（必须有的）  */
+  display: -webkit-box;
+  color: rgb(230, 227, 227);
+}
+
+.hide {
+  /*规定子元素的排列方向 */
+  -webkit-box-orient: vertical;
+  /*限制文本显示的行数  */
+  -webkit-line-clamp: 2;
+  /*实现多余的文字隐藏并用省略号来代表被隐藏的文字  */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.wenben{
+  width: 97%;
+  background-color: rgba(109, 109, 109, 0);
+  border-radius: 5rpx;
+  margin-top: 3%
+}
+.group{
+  display: flex;
+  flex-direction: row;
+  padding-top: 1%
+}
+.Icon{
+width: 22rpx;
+height: 22rpx;
+margin-top:1% 
+}
+.text1{
+  font-size: 23rpx;
+  color: rgb(243, 242, 242);
+  margin-left: 3%; 
+}
+/* .text2{
+  font-size: 22rpx;
+  color: rgb(248, 199, 94);
+  margin-bottom: 10rpx;
+  position: relative;
+  margin-left: 86%; 
+  } */ 
+.weizhi{
+  margin-top: 6%
+}
+.weizhi2{
+   display: flex;
+  flex-direction: row;
+}
+.weizhi3{
+   display: flex;
+  flex-direction: column;
+}
+.main-menu-group{
+  height: 63px;
+  border-left: 1px dashed #7e7b7b;
+  margin-left: 5%
+}
+.main-menu{
+  display: flex;
+  flex-direction: row;
+  margin-left: 2%
+}
+.btn1{
+  width: 100rpx;
+  height: 150rpx;
+  color: #f4c708;
+  border-radius: 0rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent; 
+  font-size: 20rpx;
+  /* font-family:"PingFangSC"; */
+}
+
+.btnImg {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.btn1::after {
+  border: 0; 
+}
+.divLine{
+ background: rgba(224, 227, 218, 0.185);
+ width: 90%;
+ height: 1px;
+ margin-top: 3%;
+ margin-left: 5%
+}
+.wz scroll-view{
+    height: 56px;
+    margin-top: 1%
+}
+.item3{
+  font-size: 25rpx;
+  color: rgb(231, 231, 231);
+  font-family:"PingFangSC-Thin";
+}

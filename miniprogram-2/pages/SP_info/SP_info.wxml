@@ -1,0 +1,21 @@
+<!--pages/SP_info/SP_info.wxml-->
+<view class='list'>
+  <block wx:for='{{dataList}}'>
+  <view class="list_item"  wx:key='{{index}}'>
+      <navigator url='/pages/sp/sp?goodsId={{index}}'>
+      <view class='img'>    
+        <image src="{{imghref}}{{item.goods_img}}"  mode="scaleToFill"/>
+      </view> 
+      <view class='info'>
+        <view class='title'>{{item.goods_title}}</view>
+        <view class='price'>￥{{item.goods_price}}</view>
+        <view class='num'>销量{{item.goods_xiaoliang}}</view>
+        <view class="juli"><button class="button-green" bindtap="addCar" formType="submit">加入购车</button>
+        <button class="button-red" bindtap="immeBuy" formType="submit">立即购买</button></view>
+        
+      </view>
+       </navigator>
+      <view class='clear'></view>
+  </view>
+  </block>
+</view>

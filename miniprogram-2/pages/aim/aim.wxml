@@ -1,0 +1,57 @@
+<!--pages/aim/aim.wxml-->
+<view class="body"> 
+  <view class="top">
+    <view ><image class="top_img" src="../../image/aim/sun1.png"></image></view>
+    <view class="top_txt">
+      <view class="txt_line1">小习惯</view>
+      <view class="txt_line2">100%完美的日子</view>
+      <view class="txt_line3">在2019剩余的21个日子里要继续努力</view>
+    </view>
+  </view>
+
+  <view class="main">
+    
+    <view class="main_view">
+      <view><image class="main_img" src="../../image/aim/2.jpg"></image></view>
+      <view class="main_txt">
+        <view><image class="icon" src="../../image/aim/sun1.png"></image></view>
+        <view class="habit_title">跑步打卡</view>
+      </view>
+      <view class="main_txt">
+        <view class="count">已签到 1 次</view>
+        <view class="btn1"><button class="btn">打卡</button></view>
+      </view>
+    </view>
+
+    <view class="main_view">
+      <view><image class="main_img" src="../../image/aim/4.jpg"></image></view>
+      <view class="main_txt">
+        <view><image class="icon" src="../../image/aim/sun1.png"></image></view>
+        <view class="habit_title">阅读打卡</view>
+      </view>
+      <view class="main_txt">
+        <view class="count">已签到 3 次</view>
+        <view class="btn1"><button class="btn">打卡</button></view>
+      </view>
+    </view>
+
+    <view class="main_view">
+      <view><image class="main_img" src="../../image/aim/3.jpg"></image></view>
+      <view class="main_txt">
+        <view><image class="icon" src="../../image/aim/sun1.png"></image></view>
+        <view class="habit_title">学习打卡</view>
+      </view>
+      <view class="main_txt">
+        <view class="count">已签到 0 次</view>
+        <view class="btn1"><button class="btn">打卡</button></view>
+      </view>
+    </view>
+  </view>
+
+  <navigator url="/pages/aim_add/aim_add" class="bottom">
+    <image class="bottom_btn" src="../../image/plaza/btn.png"></image>
+  </navigator>
+  
+</view>
+  
+  

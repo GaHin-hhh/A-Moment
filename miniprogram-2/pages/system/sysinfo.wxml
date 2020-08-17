@@ -1,0 +1,3 @@
+<!--pages/system/sysinfo.wxml-->
+<text>pages/system/sysinfo.wxml</text>
+<view class='list-con'><text>{{item}}</text></view> 

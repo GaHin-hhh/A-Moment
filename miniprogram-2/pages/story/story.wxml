@@ -1,0 +1,39 @@
+<!--pages/story/story.wxml-->
+<view class="container">
+
+  <view class="top_data">
+    <view class="data_day">{{day}}</view>
+    <view class="data_year"><text>Dec.{{year}}</text></view>
+    <view><image class="top_icon_l" src="../../image/story/triangle.png"></image></view>
+    <view class="right_part">
+      <image class="top_icon_r" src="../../image/story/more.png"></image>
+      <view class="more"><navigator url="/pages/plaza/plaza"><text>更多</text></navigator></view>
+    </view>
+  </view>
+
+  <scroll-view scroll-y="true" style="height: 600px" >
+  <view  wx:for="{{datas}}" wx:key="" >
+    <navigator url="/pages/story_txt/story_txt?id={{item.ID}}">
+
+     <view class="line"></view>
+      <view class="story_view"  >
+        <view class="story_type">- 阅读 -</view>
+        <view class="name">{{item.NAME}}</view>
+        <view class="author">{{item.AUTHOR}}</view>
+        <view ><image src="{{item.IMG}}" class="img"></image></view>
+        <view class="txt">{{item.TXT}}</view>
+
+        <view class="bottom">
+          <view class="day">{{item.DAY}}</view>
+          <view class="right_part">
+            <view><image  class="icon"src="../../image/story/heart.png"></image></view> 
+            <view><image  class="icon" src="/image/bar/fx.png "></image></view>
+          </view>
+        </view>  
+      </view>
+    </navigator>
+
+  </view>
+  </scroll-view>
+ 
+</view>

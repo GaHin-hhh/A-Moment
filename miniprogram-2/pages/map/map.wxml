@@ -1,0 +1,12 @@
+<!--pages/map/map.wxml-->
+<map id="map" longitude="{{longitude}}" latitude="{{latitude}}" markers="{{markers}}" circles="{{circles}}" polyline="{{polyline}}" bindregionchange="regionChange"  style="width: 100%; height:100vh;"></map>
+<form>
+<view class="Container" bindsubmit="formSubmit">
+ <text>经度:</text><input  name='latitude' disabled='disabled' value='{{wd}}'/>
+ <text>纬度:</text><input  name='longitude' disabled='disabled' value='{{jd}}'/>
+</view>
+ <button class='btn1' bindtap='locationClick'>
+    <image class='btnImg' src='/image/bar/wz.png'></image>
+ </button>
+<button  bindtap="site" class="button1">打卡</button>
+</form>

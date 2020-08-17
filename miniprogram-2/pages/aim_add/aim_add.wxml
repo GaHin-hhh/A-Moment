@@ -1,0 +1,89 @@
+<view class="container">
+<!--目标-->
+  <view class="view"> 
+    <text class="name-key">设置打卡目标:</text>
+    <input class="name-input" placeholder="例如：跑步，看书，健身"></input>
+  </view>
+<!--时间-->
+  <view class="view-col">
+    <view class="topic"> 
+      
+      <image src="../../image/aim/ios-settings.png" class="topic-icon"></image>
+      <text class="name-key">设置打卡时间:</text>
+    </view>
+    
+    <view class="view-row">
+      <view class="begin-time-view">
+      
+        <text class="begin-time-key">开始时间</text>
+        <picker class="begin-time-value" mode="date" value="{{date}}" start="1978-01-01"                end="2017-1-23" bindchange="bindDateBegin"> {{BeginDates}} </picker>
+ 
+      </view>
+
+      <view class="end-time-view">
+        <text class="end-time-key"> 结束时间</text>
+        <picker class="end-time-value" mode="date" value="{{date}}" start="1978-01-01"                end="2017-1-23" bindchange="bindDateEnd"> {{EndDates}} </picker>
+      </view>
+    </view>
+
+  </view>
+<!--提醒-->
+  <view class="view-col">
+    <view class="topic">
+      <image src="../../image/aim/md-time.png" class="topic-icon"></image>
+      <text class="name-key">设置提醒时间</text>
+      <switch checked="ture" class="topic-switch"/>
+    </view>
+    
+    <view class="topic">
+      <view class="img_add">
+        <image src="../../image/aim/add.png" class="addTime_img" bindtap="addTime"></image>
+      </view>
+
+      <view wx:for="{{times}}" wx:for-item="item">
+        <view class="img">
+          <image src="../../image/aim/闹钟.png" class="add_time_img"></image>
+          <text class="add_time_value">{{item.times}}</text>
+        </view> 
+      </view>
+    </view>
+
+<!--重复-->
+    <view class="topic">
+      <image src="../../image/aim/ios-repeat.png" class="topic-icon"></image>
+      <text class="name-key">重复</text>
+      <view class="repeat_value">
+        <picker class="" bindchange="bindPickerChange_time" value="{{index}}" range="{{repeatTime}}">{{repeatTime[index]}}
+        </picker>
+        <image src="../../image/aim/arrow.png" class="picker-icon"></image>
+      </view>
+    </view>
+
+<!--重复-->
+    <view class="topic">
+      <image src="../../image/aim/ios-notifications-outline.png" class="topic-icon"></image>
+      <text class="name-key">铃声</text>
+      <view class="bell_value">
+        <picker class="" bindchange="bindPickerChange_bell" value="{{index1}}" range="{{bell}}">{{bell[index1]}}
+        </picker>
+        <image src="../../image/aim/arrow.png" class="picker-icon"></image>
+      </view>
+    </view>
+ 
+
+<!--对自己说-->
+    <view class="view-col">
+      <view class="topic">
+        <image src="../../image/aim/ios-volume-high.png" class="topic-icon"></image>
+        <text class="name-key">对自己说</text>
+      </view>
+      <textarea class="textarea_value" placeholder="写一句鼓励自己的话吧..."></textarea>
+    </view>
+  </view>
+   
+  <button form-type="submit" class="bottom-btn" form-type="submit">保存</button>
+  
+
+</view>
+  
+  

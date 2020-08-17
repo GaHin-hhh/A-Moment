@@ -1,0 +1,72 @@
+/* pages/plaza/plaza.wxss */
+page{
+height: 100%;
+background-color: #777;
+}
+.container { 
+ height: auto;
+ width: 100%;
+ display: flex; 
+ padding: 10px; 
+ flex-wrap: wrap;
+ box-sizing: border-box; 
+justify-content: space-between;
+}
+
+.view{
+width: 49%;
+margin-top: 10px;
+background: #F3F3F3;
+}
+
+.view .plaza_img{
+  width: 100%;
+  height: 150px;
+}
+.view .plaza_info{
+width: 100%;
+display: flex;
+flex-direction: column;
+margin-top: 5px;
+padding: 10px;
+color: rgb(51, 51, 51);
+}
+
+.view .plaza_info .plaza_title{
+  width: 90%;
+  font-size: 14px;
+  line-height: 25px;
+  height: 50px;
+  overflow:hidden;
+  display:-webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+
+}
+.plaza_author{
+  margin-top: 10px;
+  font-size: 10px;
+color: #727272;
+}
+.plaza_time{
+  margin-top: 10px;
+  font-size: 10px;
+color: #7e7e7e;
+}
+
+.bottom{
+  width: 100%;
+  display: flex; 
+justify-content: center;
+  align-items: center;
+}
+.bottom_btn {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 100rpx;
+  background: rgb(240, 201, 94);
+  position: fixed;
+  bottom: 50rpx;
+  display: flex;
+  opacity: 0.7;
+}

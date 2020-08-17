@@ -1,0 +1,28 @@
+<!--pages/hdlist/hdlist.wxml-->
+  <view class="test-bg">
+    <image src="{{pimg2}}" class="bg-image" mode="scaleToFill"></image>
+  </view> 
+  
+  <view >  
+  <view class="text" >  
+  <view class="title">{{ptitle}}</view>
+  <view class="weizhi">
+  <view class="dir3">
+    <icon class="iconfont icon-md-calendar iconst"></icon>
+    <view class="xinxi">{{pdate}}</view>
+</view> 
+<view class="dir3">
+    <icon class="iconfont icon-md-pin iconst"></icon>
+    <view class="xinxi" bindtap="getLocation">{{pplace}}</view>
+</view>
+<view class="dir3">
+    <icon class="iconfont icon-md-pricetag iconst"></icon>
+    <view class="xinxi">{{pjiage}}</view>
+</view>
+  </view>
+  <button class="button1">我要参加</button>
+  <view class="button2">  <image class="icon2" src="{{isFavorite=='false'?'/image/bar/ios-star.png  ':'/image/bar/ios-star1.png '}}" bindtap='collect'></image></view>
+  </view>
+ <image class="tupian" mode="widthFix" src="{{pimg}}"></image>
+  </view>
+ 

@@ -1,0 +1,26 @@
+<!--pages/login/login.wxml-->
+<view class="qita" style="margin-top:70px;font-size:30px;font-weight:bold">• 一刻</view>
+<form bindsubmit="formSubmit">
+<view class="Container">
+    <view class="dir">
+      <view class="login">
+      <icon class="iconfont icon-account iconst"></icon>
+        <input class="input" name='loginName' auto-focus placeholder="请输入账号" placeholder-style='color: #F3F3F3;font-family:"PingFangSC";' bindinput='accountInput'/>
+      <icon class="iconfont icon-password iconst"></icon>
+        <input class="input" name='password' password type="text" placeholder="请输入密码" placeholder-style='color: #F3F3F3;font-family:"PingFangSC";'  bindblur='pwdBlur'/>
+      </view>
+    </view>
+   </view>
+   <navigator url="/pages/register/register">
+   <view class="qita" style="float:right;margin-right:40px;margin-top:10px;">立即注册</view>
+   </navigator>
+   <view class="qita" style="margin-top:50px">
+   <button form-type="submit">登录</button>
+   </view>
+   </form>
+        <view class="qita" style="margin-top:60px">其他登录方式</view>     
+<view class="qita" style="margin-top:0px">
+        <icon class="iconfont icon-qq1 iconstt"></icon>
+        <icon class="iconfont icon-iconfontweibowukuang iconstt"></icon>
+        <icon open-type="getUserInfo" class="iconfont icon-weixin iconstt"></icon>
+        </view>

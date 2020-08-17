@@ -1,0 +1,100 @@
+/* pages/issue/issue.wxss */
+page{
+height: 100%;
+background-color: #F3F3F3;
+}
+.container { 
+ height: 100%;
+ width: 100%;
+ display: flex; 
+ flex-wrap: wrap;
+ box-sizing: border-box; 
+/* background: #eee; */
+justify-content: space-between;
+}
+.issue_img{
+  width: 100%;
+  height: 40%;
+}
+.issue_view{
+  width: 100%;
+  height: 60%;
+  padding: 10px; 
+
+  align-items: center;
+}
+.view_form{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  
+}
+.form_textarea{
+width: 100%;
+height: 200rpx;
+font-size: 16px;
+font: bold;
+padding: 20rpx;
+padding-top: 50rpx;
+margin: auto;
+line-height: 25px;
+}
+.count_view{
+width: 100%;
+display: flex;
+flex-direction: row-reverse;
+}
+.author_view{
+  width: 100%;
+display: flex;
+padding: 20rpx;
+
+}
+.count_view .form_text{
+font-size: 14px;
+margin-right: 0;
+padding: 20rpx;
+}
+.author_view .issue_author{
+font-size: 14px;
+padding-top: 10rpx;
+
+}
+.author_input{
+font-size: 14px;
+padding: 10rpx;
+}
+.issue_btn{
+  width: 30%;
+  height: auto;
+  border-radius: 5px;
+  background: rgb(240, 201, 94);
+  margin-top: 100rpx;
+  font-size: 14px;
+  color: white;
+}
+.change_img_btn{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 60px;
+  background: #666;
+  position: fixed;
+  top: 180rpx;
+  
+}
+.btn_view{
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+.btn_txt{
+  font-size: 13px;
+  color: white;
+  word-break: break-all;
+
+}
+.none{
+  background: saddlebrown;
+  display: none;
+}

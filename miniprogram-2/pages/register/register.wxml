@@ -1,0 +1,72 @@
+<!--pages/register/register.wxml-->
+<!--注册界面-->
+<view class="container"> 
+<text class="register">注册</text>
+
+<form class="login-from" bindsubmit="formSubmit" bindreset="formReset">
+
+ <!--用户名-->
+ 
+ <view class="inputView"> 
+
+  <image class="Image" src="../../image/register/用户.png"></image> 
+  <input  class="inputText" name="registerName" bindinput="nameInput" placeholder="请输入用户名"placeholder-style='color: #F3F3F3;font-family:"PingFangSC";' />
+
+ </view>  
+
+  <!--第一次密码-->
+
+ <view class="inputView"> 
+
+  <image class="Image" src="../../image/register/密码.png"></image> 
+
+  <input class="inputText" password="true" name="registerPsd1" placeholder="请输入密码" bindinput="passwordInput1"placeholder-style='color: #F3F3F3;font-family:"PingFangSC";' /> 
+
+ </view> 
+
+ <!--第二次密码-->
+ <view class="inputView"> 
+
+  <image class="Image" src="../../image/register/密码.png"></image> 
+
+  <input class="inputText" password="true" name="registerPsd2" placeholder="请重新输入密码" bindinput="passwordInput2"placeholder-style='color: #F3F3F3;font-family:"PingFangSC";' /> 
+
+ </view> 
+
+ <!--手机号-->
+
+ <view class="inputView"> 
+
+  <image class="Image" src="../../image/register/电话.png"></image> 
+  <input class="inputText" name="registerPhone" placeholder="请输入手机号" bindinput="phoneInput"placeholder-style='color: #F3F3F3;font-family:"PingFangSC";' /> 
+ </view> 
+
+<!--邮箱-->
+
+<view class="inputView"> 
+
+  <image class="Image" src="../../image/register/信封.png"></image> 
+
+  <input class="inputText" name="registerEmail" placeholder="请输入邮箱" bindinput="emailInput"placeholder-style='color: #F3F3F3;font-family:"PingFangSC";' /> 
+
+ </view> 
+
+
+
+ <!--勾选按钮-->
+<view class="checkboxView"> 
+  <checkbox class="checkBoxBtn" bindtap="checkbox"  />
+  <text class="checkBoxText">已阅读并同意 </text>
+  <text class="textGreen">《隐私权政策》《用户注册协议》</text>
+</view> 
+
+ <!--注册按钮-->
+
+ <view class="loginBtnView"> 
+  <button class="loginBtn" disabled="{{disabled}}"  form-type="submit">注册</button>
+ </view> 
+
+</form>  
+
+</view>
+

@@ -1,0 +1,32 @@
+<!--pages/music_Share/music_Share.wxml-->
+<text class="text1">点击下方记录你此刻的声音</text>
+<view class="bg">
+<view wx:if="{{voices}}" class="common-list" style="margin-bottom:120rpx;"> 
+   <view class="board"> 
+          <view class="cell" > 
+            <view class="cell-bd"  bindtap="gotoPlay" >  
+              <view class="btn">
+              <image style="width:80rpx;height:80rpx;padding-top:128rpx;padding-left:127rpx" src="/image/bar/ios-play.png "></image>
+              </view>
+            </view>    
+          </view>  
+         </view> 
+     </view> 
+     <view class="bor">
+  <view class="weizhi">
+  <view class="quxiao">取消</view>
+  <view class="fabu">发布</view> 
+  </view>
+  </view>   
+ </view> 
+<view class="myRecode">
+  <view class="recode" bindtouchstart="touchdown" bindtouchend="touchup">
+    <!-- <text>长按</text> -->
+    <image style="width:70rpx;height:70rpx;padding-bottom:14px" src="/image/bar/md-mic.png "></image>
+    <view class="ripple"></view>
+    <view class="ripple {{animationStatus?'rippleAnimation1':''}}"></view>
+    <view class="ripple {{animationStatus?'rippleAnimation2':''}}"></view>
+    <view class="ripple {{animationStatus?'rippleAnimation3':''}}"></view>
+  </view>
+</view>
+ 

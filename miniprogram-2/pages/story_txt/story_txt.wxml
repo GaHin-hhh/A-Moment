@@ -1,0 +1,35 @@
+<!--pages/story_txt/story_txt.wxml-->
+<view class="container">
+  <scroll-view scroll-y="true" class="scroll_view" style="height:620px;">
+    <view class="title">{{showNAME}}</view>
+    <view class="author">{{showAUTHOR}}</view>
+    <view class="txt">
+      <text class="txt_text" space="emsp">  静躺在岁月的流河里，翻阅繁星片段中的回忆。无情的岁月教会了我们舍取，回忆带来了岁月中至简的情感。我们何曾几时逃的过时间，逃得过因缘转世的变换。又有多少人在夜晚中迷茫，只能抬头望着那轮明月。岁月有情亦无情。春去秋来，月有阴晴圆缺;潮涨潮落，大雁来去无情意;昼夜交替，错过了庭间花开……我们不解，我们不知，只叹时光不为谁停留，红了樱桃，绿了芭蕉。\n
+  在喧嚣的城市中，在十字路口时，变得不知所措。无奈一颗心的躁动，眼眸中是世界的颜色，却也不知归路。前方路漫漫，何为归宿处?\n
+  林花谢了春红，太匆匆!我们总是感叹时间的飞逝，转眼你我两鬓银丝又添。我们跟不上时光的脚步，但也不能停下追逐它的脚步。不要让时光褪去了眼中的颜色;不要让时光改变自己;不要让时光磨灭心灵……
+  让心灵得到沉静，世界也就变得沉静。时光飞逝，而自己却碌碌无为， 怎能只怨时光?那是一颗心的退缩，无用!这是时间带来的考验，不仅是人亦是物。时间的长河里，退则溺，近则生。\n
+  那么，愿所有朋友都能在时间的飞逝下，做一个无畏，有所作为，不受惑的人。不畏惧风雨，不虚度光阴，不念钱财利益，放下心中贪欲，仇恨，心机。让心灵得到净化，让灵魂至简至淡。\n
+  静看花开，笑看人生!聆听自然，净化心灵，追着时间，追着光。夜晚中不在迷茫，月亮给了答案——时光不解人情，莫停下步伐，白了少年头!\n    
+
+    </text>
+ 
+    </view>
+  </scroll-view>
+
+  <view class="bottom_nav">
+    <input class="bottom_input" name="" bindinput="" placeholder="写个评论..." ></input>
+    <view class="right_part">
+      <view>
+        <image  class="icon"src="../../image/story_txt/heart.png"></image>
+        <text class="icon_num">999</text>
+      </view> 
+      <view>
+        <navigator url="/pages/story_comment/story_comment">
+        <image  class="icon" src="../../image/story_txt/comment.png"></image>
+        <text class="icon_num">12</text>
+        </navigator>
+      </view>
+      <view><image  class="icon"src="../../image/story_txt/transpond.png"></image></view> 
+    </view>
+  </view>
+</view>

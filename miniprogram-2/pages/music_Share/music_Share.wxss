@@ -1,0 +1,116 @@
+/* pages/music_Share/music_Share.wxss */
+@import"../../style/iconfont2.wxss";
+page{
+  background-color: #777;
+  /* background-color: rgb(243, 243, 243); */
+}
+.text1{ 
+  margin-top: 5%; 
+  font-size: 25rpx;
+  color: rgb(231, 231, 231);
+  width: 100%;
+  display:flex;
+ align-items:center;
+ justify-content:center;
+}
+.myRecode{
+  position: fixed;
+  left: 37%;
+  top:70%;
+  text-align: center;
+  box-sizing: border-box;
+}
+.myRecode .recode{
+  display: inline-block;
+  width:230rpx;
+  height:100rpx; 
+  background: rgb(240, 201, 94);
+  border-radius: 30px;
+  text-align: center;
+  color:#fff;
+  line-height: 200rpx;
+  position: relative;
+}
+.ripple{
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  border-radius: 30px;
+  border:2px solid rgb(240, 201, 94);
+}
+.rippleAnimation1{
+  animation: ripple 1s infinite linear;
+} 
+.rippleAnimation2{
+  animation: ripple 1s infinite linear;
+  animation-delay:0.3s;
+} 
+.rippleAnimation3{
+  animation: ripple 1s infinite linear;
+  animation-delay:0.6s;
+} 
+@keyframes ripple{
+  from{
+    opacity: 1;
+    transform: scale(1,1)
+  }
+  to{
+    opacity: 0;
+    transform: scale(2,2)
+  }
+}
+
+.lanmu{
+  background-color: #888787;
+  margin-top: 60%
+}
+.bg{
+  margin-top: 18%;
+  padding-top:5%; 
+  margin-left: 17%;
+  background-color: #979797;
+  /* background-color: #646464; */
+  height: 440rpx;
+  width: 507rpx;
+  border: 1px solid rgb(240, 201, 94);
+  box-shadow: 0px 0px 20px rgb(240, 201, 94);
+  border-radius: 20px;
+}
+.btn{
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 1px solid rgb(240, 201, 94);
+  box-shadow: 0px 0px 10px rgb(240, 201, 94);
+  background-color: #64646400;
+  color: #fff;
+  margin-left: 90rpx;
+  background-color: #777;
+}
+.weizhi{
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  top: 50%;
+  left: 29%;
+}
+.fabu{
+  color: #fff;
+  position: fixed;
+  display: flex;
+  left: 65%;
+  
+}
+.quxiao{
+  color: #fff;
+  width: 94px;
+  height: 30px;
+  border-right: 1px solid #fff;
+  
+}
+/* .bor{
+  background-color: #3f3f3f;
+  height: 200px
+} */

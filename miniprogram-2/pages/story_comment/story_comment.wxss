@@ -1,0 +1,70 @@
+/* pages/story_comment/story_comment.wxss */
+page{
+height: 100%;
+}
+.container { 
+ height: 100%;
+ width: 100%;
+ display: flex; 
+ flex-direction: column;
+/* background: #eee; */
+}
+.title{
+  width: 70px;
+  font-size: 16px;
+  font: bold;
+  padding: 10px;
+  border-bottom: 5px solid black;
+  margin-left: 10px;
+margin-bottom: 10px;
+}
+
+.txt_top,.txt_bottom{
+display: flex;
+}
+.txt_img{
+width: 20px;
+height: 20px;
+}
+.txt_name{
+  font-size: 14px;
+  margin-left: 10px;
+  align-items: center;
+  color: #999;
+}
+.txt_time
+{
+    color: #999;
+  font-size: 12px;
+margin-left: auto;
+display: flex;
+  align-items: center;
+}
+.txt_view{
+padding: 10px;
+}
+.txt_middle{
+  font-size: 12px;
+  margin-top: 10px;
+  line-height: 25px;
+  padding-left: 20px;
+  color: #333;
+}
+.txt_bottom{
+  display: flex;
+  flex-direction: row-reverse;
+
+}
+.icon{
+width: 20px;
+height: 20px;
+margin-left: 20px;
+margin-top: 10px;
+}
+.line{
+  padding-left: 10px;
+  padding-right: 10px;
+  background: #999;
+  height: 1px;
+  margin-top: 10px;
+}

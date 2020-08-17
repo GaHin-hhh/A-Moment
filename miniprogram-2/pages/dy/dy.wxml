@@ -1,0 +1,90 @@
+<!--pages/dy/dy.wxml-->
+<view class="page">  
+  <!--顶部导航栏-->     
+  <view class="swiper-tab">  
+    <view class="tab-item {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">为你推荐</view>  
+    <view class="tab-item {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">我的看单</view>  
+  </view>  
+  <!--内容主体-->  
+  <swiper class="swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange">  
+    <swiper-item> 
+      <view class="jrtj">今日推荐</view>
+      <swiper class='swiperClass'  indicator-color="#a39f99" indicator-active-color="#f49641"   interval="500" duration="1000" previous-margin="50px"  circular bindchange="bindchange" style='height: 800px'>
+ <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+ <swiper-item>
+ <image src="{{item.img}}" class="slide-image {{swiperIndex == index ? 'active' : 'quiet'}}" mode="widthFix">
+ </image>
+ <view>
+ <view class="group2">
+ <view class="dyname">{{item.title}}</view>
+ <view class="dydata">{{item.date}}</view>
+ </view>
+ <view class="group"> 
+          <image class='Icon' src='/image/bar/favorfill (1).png ' mode="widthFix"></image>
+          <image class='Icon' src='/image/bar/favorfill (1).png ' mode="widthFix"></image>
+          <image class='Icon' src='/image/bar/favorfill (1).png ' mode="widthFix"></image>
+          <image class='Icon' src='/image/bar/favorfill (1).png ' mode="widthFix"></image>
+          <image class='Icon' src='/image/bar/favorfill.png ' mode="widthFix"></image>
+          <text class="text1">9.0</text>
+          </view>           
+    <view class="zhubo-from">{{item.content}}</view> 
+    <view class="bg">
+    <view class="dyjj">剧情简介：</view>
+     <view class='wz'>
+  <scroll-view scroll-y scroll-into-view='item2'>
+    <view id='item1' class='item3'>{{item.motto}}</view>
+  </scroll-view>
+</view>
+       </view>
+    <view class="group3">
+    <image class='playicon' src='/image/bar/ios-play.png ' mode="widthFix"></image>
+    <view class="play">播放全片</view>
+    </view>
+ </view>
+ </swiper-item>
+ </block>
+ </swiper>
+
+    </swiper-item>  
+    <swiper-item>  
+      <view class="ban">
+      <view class="biaoti">我看过的</view>
+      <view class="quanbu">全部 ></view>
+      </view>
+       
+<view class='out'>
+  <scroll-view scroll-x scroll-into-view='item2'>
+    <view class='item' wx:for="{{list}}" wx:for-item="item">
+    <image class='zhuboIcon' src='{{item.img}}' mode="widthFix" bindtap='showBuyModal'></image>
+    <view class="zhubo-name">{{item.title}}</view>
+    <view class="zhubo-from">{{item.content}}</view>
+    </view>
+  </scroll-view>
+</view>
+      <view class="ban">
+      <view class="biaoti">我所加入的电影清单</view>
+      <view class="quanbu">全部 ></view>
+      </view>
+      <view>
+      <view class="buju">
+      <view class='item1' wx:for="{{list1}}" wx:for-item="item">
+    <image class='zhuboIcon' src='{{item.img}}' mode="widthFix" bindtap='showBuyModal'></image>
+    <view class="zhubo-name">{{item.title}}</view>
+    <view class="zhubo-from">{{item.content}}</view>
+    </view>
+    <view>
+    <view class="main-menu">
+    <navigator url='/pages/gyzn/gyzn'>
+  <view class='btn1'>
+    <image class='btnImg' src='/image/bar/xyd.png '></image>
+ </view>
+ </navigator>
+  </view>
+    </view>
+    </view>
+      </view>
+
+
+    </swiper-item>  
+  </swiper>  
+</view>  

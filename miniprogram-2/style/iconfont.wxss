@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 1467298 */
+  src: url('//at.alicdn.com/t/font_1467298_57tnzfvhkp8.eot');
+  src: url('//at.alicdn.com/t/font_1467298_57tnzfvhkp8.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1467298_57tnzfvhkp8.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1467298_57tnzfvhkp8.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1467298_57tnzfvhkp8.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1467298_57tnzfvhkp8.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 20px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-weixin:before {
+  content: "\e600";
+}
+
+.icon-iconfontweibowukuang:before {
+  content: "\e661";
+}
+
+.icon-account:before {
+  content: "\e6b8";
+  color: #f8f8f4e8;
+}
+
+.icon-qq1:before {
+  content: "\e623";
+}
+
+.icon-password:before {
+  content: "\e82b";
+  color: #f8f8f4e8
+}

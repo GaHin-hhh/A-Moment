@@ -1,0 +1,23 @@
+<!--pages/story_comment/story_comment.wxml-->
+<view class="container">
+  <view class="title">评论列表</view>
+  <view class="txt_view" wx:for="{{datas}}" wx:key=''>
+    <view class="txt_top">
+      <view>
+        <image  class="txt_img" src="{{item.IMG}}"></image>
+      </view>   
+      <view class="txt_name">{{item.NAME}}</view>
+      <view class="txt_time"><text>{{item.TIME}}</text></view>
+    </view>
+    <view class="txt_middle">{{item.TXT}}</view>
+    <view class="txt_bottom">
+      <view >
+        <image  class="icon" src="../../image/story_comment/comment.png"></image>
+      </view>
+      <view>
+        <image  class="icon" src="../../image/story_comment/zan.png"></image>
+      </view>
+    </view>
+    <view class="line"></view>
+  </view>
+</view>

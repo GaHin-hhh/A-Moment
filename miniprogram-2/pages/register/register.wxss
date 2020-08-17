@@ -1,0 +1,117 @@
+/* pages/register/register.wxss */
+page{ 
+ height: 100%; 
+  background: #777;
+} 
+.container { 
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+padding: 200rpx 0;
+height: 100%; 
+padding: 10px;
+
+} 
+
+/*注册*/
+
+.register{
+text-align: center;
+font-size: 24px;
+margin-top: 20px;
+color: #f3f3f3
+}
+
+/*表单内容*/
+
+.login-from { 
+
+ margin-top: 50px; 
+ flex: auto; 
+ height:100%; 
+ width: 70%;
+ display: flex; 
+ flex-direction: column; 
+ padding: 0; 
+ box-sizing: border-box; 
+ 
+
+
+} 
+
+.inputView { 
+ border: 1px solid #f8c73f;
+ border-radius: 100px;
+
+ width: 100%;
+ margin-top: 10px;
+ display: flex;
+ padding: 5px;
+} 
+
+
+/*输入框*/
+
+.Image { 
+ margin-left: 15px;
+  margin-top: 3px;
+ width: 25px; 
+ height: 25px;
+} 
+
+.inputText { 
+padding-left: 20px;
+ text-align: center; 
+ color: #f3f3f3;
+height: 30px;
+ font-size: 14px;
+
+} 
+
+/*勾选框*/
+
+.checkBoxBtn{
+ transform: scale(0.6,0.6);
+}
+.checkBoxText{
+font-size: 12px;
+word-break: break-all;
+}
+.textGreen{
+font-size: 12px;
+color: rgb(240, 201, 94);
+word-break: break-all;
+
+}
+.checkboxView{
+ width: 100%;
+ margin-top: 15px;
+}
+
+
+
+/*注册按钮*/
+
+
+.loginBtnView { 
+
+ width: 100%; 
+
+ height: auto; 
+
+ 
+} 
+/* button{
+  background-color: rgb(240, 201, 94);
+} */
+.loginBtn { 
+
+ width: 100%; 
+  background-color: rgb(240, 201, 94);
+ font-size: 14px;
+ color: rgb(99, 99, 99);
+ height:35px;
+ margin-top: 30px; 
+}
+  

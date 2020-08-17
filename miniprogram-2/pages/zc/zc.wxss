@@ -1,0 +1,71 @@
+/* pages/zc/zc.wxss */
+.content{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #44444200;
+  margin-top:10%;
+  width: 330px;
+  margin-left:42px;
+  border-radius: 10px;
+  border:2px solid #f8c73f;
+  box-shadow: 0px 0px 10px #f8c73f;
+}
+.user-input{
+  width: 90%;
+  border: 1px solid #f8c73f; 
+  color: #fff;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0);
+  height: 40px;
+  position: relative;
+  margin: 15px auto;
+}
+.user{
+  font-size: 14px;
+  width: 80%;
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 8px;
+}
+.psw{
+    position: absolute;
+    right: 0;
+    top: 4px;
+}
+.phone-test{
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: 0 auto;
+}
+.phone-number{
+  height: 40px;
+  width: 60%;
+  margin-right: 5%;
+  border: 1px solid #f8c73f; 
+  color: #fff;
+  border-radius: 5px;
+}
+.btn2{
+  height: 42px;
+  width: 35%;
+  background: rgb(185, 184, 184);
+  font-size: 16px;
+  color: rgb(255, 255, 255)
+}
+.btn{
+  width:50%;
+  margin-top: 10%;
+  font-size: 16px;
+  color: #F3F3F3;
+  background-color: #f8c73f;
+  box-shadow: 0px 0px 10px #f8c73f;
+}
+button[disabled] {
+  background-color: #b4b4b4;
+color:rgba(0,0,0,0.4);
+}
+page{
+  background: #777;
+}

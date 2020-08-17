@@ -1,0 +1,27 @@
+<!--pages/issue/issue.wxml-->
+<view class="container">
+  <view class="btn_view">
+    <button class="change_img_btn" bindtap="chooseimage"><text class="btn_txt">更换</text></button>
+  </view>
+  <image class="issue_img" name="plaza_img" src="{{plaza_img}}"></image>
+  <view class="issue_view">
+    <form class="view_form" bindsubmit="formSubmit" bindreset="formReset">
+
+      <textarea class='form_textarea' name="plaza_txt" maxlength='200' placeholder='这一刻，你在想什么？' bindinput="bindText1" cursor-spacing="200">
+      </textarea>
+
+      <view class="author_view">
+        <view class="issue_author">匿名：</view>
+
+        <input class="author_input" name="plaza_author" placeholder='悄悄发布~' focus="auto" cursor-spacing="70"></input>
+        
+      </view>
+      <view class="count_view">
+          <text class="form_text" >{{t_length}}/200</text> 
+      </view>
+      <text class="none"  name="plaza_img">{{plaza_img}}</text>
+      <text class="none" name="plaza_time">{{plaza_time}}</text>
+      <button  form-type="submit" class="issue_btn" form-type="submit">发布</button>
+    </form>  
+  </view>
+</view>

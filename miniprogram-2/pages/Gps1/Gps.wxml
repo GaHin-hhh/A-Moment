@@ -1,0 +1,6 @@
+<!--pages/gps/gps.wxml-->
+<map  id="map" longitude="{{jd}}" latitude="{{wd}}"  style="width: 100%; height: 800rpx;"  show-location></map>
+<view><text>经度{{jd}}</text></view>
+<view><text>纬度{{wd}}</text></view>
+<view><text>距离{{jl}}</text></view>
+

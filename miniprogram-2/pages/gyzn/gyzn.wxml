@@ -1,0 +1,42 @@
+<!--pages/g y z n/g y z n.wxml-->
+<view class='zhubo' wx:for="{{list}}" wx:for-item="item">
+      <view class='zhuboLeft'>
+        <view class='zhubo-avater'>
+          <image class='zhuboIcon' src='{{item.img}}' mode="widthFix"></image>
+        </view>
+        <view class="weizhi">
+        <view class="weizhi2">
+        <view class="weizhi3">
+          <view class='zhubo-name'>{{item.title}}</view>               
+          <view class="group"> 
+          <image class='Icon' src='/image/bar/favorfill (1).png ' mode="widthFix"></image>
+          <image class='Icon' src='/image/bar/favorfill (1).png ' mode="widthFix"></image>
+          <image class='Icon' src='/image/bar/favorfill (1).png ' mode="widthFix"></image>
+          <image class='Icon' src='/image/bar/favorfill (1).png ' mode="widthFix"></image>
+          <image class='Icon' src='/image/bar/favorfill.png ' mode="widthFix"></image>
+          <text class="text1">{{item.mark}}</text>
+          </view>
+          <view class='zhubo-from'>{{item.content}}</view>
+          </view>
+           <view class="main-menu-group">
+<view class="main-menu">
+  <view class='btn1'>
+    <image class='btnImg' src='/image/bar/xyd.png ' bindtap='collect'></image>
+    <view>想看</view>
+ </view>
+  </view> 
+   </view>
+          </view>
+          <view class="wenben">
+          <view class='wz'>
+  <scroll-view scroll-y scroll-into-view='item2'>
+    <view id='item1' class='item3'>{{item.motto}}</view>
+  </scroll-view>
+</view>
+  <!-- <text  class="conts {{isF?'hide':''}}">{{motto}}</text>
+  <text class="text2" bindtap='aa'>{{isF ? '展开' : '收起'}}</text> -->
+      </view>    
+        </view>
+</view> 
+ 
+</view>

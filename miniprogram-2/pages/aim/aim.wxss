@@ -1,0 +1,130 @@
+/* pages/aim/aim.wxss */
+page{ 
+ height: 100%; 
+ background-color: rgb(243, 243, 243);
+}  
+.body { 
+width: 100%;
+height: 100%;
+ display: flex; 
+ flex-direction: column;
+/* background: #eee; */
+} 
+.top{
+  padding: 10px;
+  display: flex;
+}
+.top_img{
+  height: 100px;
+  width: 100px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.top_txt{
+display: flex;
+flex-direction: column;
+margin-left: auto;
+padding: 10px;
+}
+.txt_line1{
+  font-size: 24px;
+  font: bold;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 10px;
+}
+.txt_line2{
+  font: bold;
+  font-size: 18px;
+ display: flex;
+  flex-direction: row-reverse;
+  margin-top: 10px;
+
+}
+.txt_line3{
+  font-size: 14px;
+  color: rgb(117, 115, 115);
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 5px;
+}
+.txt_line3_icon{
+  width: 10px;
+  height: 10px;
+}
+.main{
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: auto; 
+  margin-top: 20px;
+  padding-top: 10px;
+
+}
+.main_view{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  border-radius: 5px;
+  /* box-shadow: 0px 0px 2px 2px rgb(214, 211, 211); */
+
+  box-shadow: 0px 0px 10px  #3F3F3F;
+  /* background: rgb(202, 202, 202); */
+  margin-bottom: 30px;
+}
+.main_img{
+  width: 100%;
+  height: 200px;
+  background: rgb(240, 201, 94);
+}
+.main_txt
+{
+  display: flex;
+  align-items: center;
+}
+.icon{
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+}
+.habit_title{
+  margin-left: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.count{
+  font-size: 12px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+
+}
+.btn{
+  width: 40px;
+  font-size: 12px;
+  padding: 0;
+  background: rgb(240, 201, 94);
+}
+.btn1{
+  margin-left: auto;
+  margin-right: 5px;
+  margin-bottom: 10px;
+
+}
+.bottom{
+  width: 100%;
+  display: flex; 
+justify-content: center;
+  align-items: center;
+}
+.bottom_btn {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 100rpx;
+  background:  rgb(240, 201, 94);
+  position: fixed;
+  bottom: 50rpx;
+  display: flex;
+  opacity: 0.7;
+}
